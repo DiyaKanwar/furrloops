@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - FurrLoops</title>
+    <meta name="description" content="Shop handcrafted crochet accessories for cats, dogs, birds, and small pets at FurrLoops.">
+    <meta name="keywords" content="buy pet accessories, crochet pet products, handmade pet fashion">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --terracotta: #E07A5F;
+            --moss-green: #81B29A;
+            --golden-wheat: #F2CC8F;
+            --midnight-teal: #3D405B;
+            --soft-blush: #F4EDE4;
+            --muted-lavender: #C9C5BA;
+            --ivory-white: #FAF9F6;
+            --charcoal-brown: #2D2A26;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--charcoal-brown);
+            background-color: var(--ivory-white);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+    }
+
+    @layer utilities {
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/SaleBanner.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/ShopContent.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="shop-app.js"></script>
+</body>
+</html>
